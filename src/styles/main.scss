@@ -1,5 +1,22 @@
-@import 'null.scss';
-@import 'variable.scss';
+//@import 'null.scss';
+//@import 'variable.scss';
+
+/*Colors*/
+$textColor1: #1F2041;
+$textColor75:rgba(31, 32, 65, 0.75);
+$textColor50:rgba(31, 32, 65, 0.5);
+$textColor25:rgba(31, 32, 65, 0.25);
+$textColor5:rgba(31, 32, 65, 0.05);
+$primaryColor: #BC9CFF;
+$secondColor: #6FCF97;
+
+/*Margin*/
+
+/*Fonts*/
+$font_h1: 700/24px;
+$font_h2: 700/19px;
+$font_h3: 700/12px;
+$font_body: 400/14px;
 
 .colors {
   min-width: 270px;
@@ -12,40 +29,40 @@ align-items: center;
 justify-content: flex-start;
 margin-bottom: 20px;
 
-    &__example {
+    &__example_color {
         min-width: 70px;
         min-height: 70px;
         border-radius: 6px;
     }
     
-    &__preview_color {
-    &_darkest-gray {
-        background: $mainTextColor;
+    &__example_color {
+    &_textColor1 {
+        background: $textColor1;
     }
-    &_dark-gray {
-        background: $textColor_75;
+    &_textColor75 {
+        background: $textColor75;
     }
-    &_gray {
-        background: $textColor_50;
+    &_textColor50 {
+        background: $textColor50;
     }
-    &_light-gray {
-        background: $textColor_25;
+    &_textColor25 {
+        background: $textColor25;
     }
-    &_lightest-gray {
-        background: $textColor_5;
+    &_textColor5 {
+        background: $textColor5;
     }
-    &_purple {
-        background: $designColor_main;
+    &_primaryColor {
+        background: $primaryColor;
     }
-    &_green {
-        background: $designColor_second;
+    &_secondColor {
+        background: $secondColor;
     }
     }
     
     &__description {
     max-width: 300px;
     padding-left: 40px;
-    font: 400 1.3571rem/29px $mainFont;
+    font: 400 1.3571rem/29px $font_body;
     }
     
     &__name {

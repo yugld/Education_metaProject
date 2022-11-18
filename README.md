@@ -23,7 +23,7 @@ npm install
 # Server with reload
 npm run dev
 
-# Server with reload at localhost:9000
+# Server with reload at localhost:9000.
 npm run serve
 
 # Output will be at dist/ folder
