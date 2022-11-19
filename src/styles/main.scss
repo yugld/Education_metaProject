@@ -12,11 +12,11 @@ $secondColor: #6FCF97;
 
 /*Margin*/
 
-/*Fonts*/
+/*Fonts*//*
 $font_h1: 700/24px;
 $font_h2: 700/19px;
 $font_h3: 700/12px;
-$font_body: 400/14px;
+$font_body: 400/14px;*/
 
 .colors {
   min-width: 270px;
@@ -62,7 +62,7 @@ margin-bottom: 20px;
     &__description {
     max-width: 300px;
     padding-left: 40px;
-    font: 400 1.3571rem/29px $font_body;
+    //font: 400 1.3571rem/29px $font_body;
     }
     
     &__name {
