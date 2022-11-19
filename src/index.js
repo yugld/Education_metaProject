@@ -1,4 +1,4 @@
-import './main.scss';
+import './styles/main.scss';
 import './fonts/fonts.scss';
 
 function component(text) {
