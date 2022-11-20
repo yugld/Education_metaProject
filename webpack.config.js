@@ -9,22 +9,29 @@ module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'index.[contenthash].js',
+    filename: '[name].[contenthash].js',
     assetModuleFilename: path.join('images', '[name].[contenthash][ext]'), //азывает выходной каталог images и шаблон имени [name].[contenthash][ext] для файлов, которые соответствуют правилу type: 'asset/resource'. Если assetModuleFilename не указан, то, по умолчанию, каталогом будет dist, а имя файла будет [contenthash][ext].
+
   },
+  devtool: 'source-map',
   module: {
     rules: [
         {
-            test: /\.js$/,
-            use: 'babel-loader',
+            test: /\.m?js$/,
             exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                    options: {
+                     presets: ['@babel/preset-env']
+                 },
+            },
         },
         {
             test: /\.pug$/,
             loader: 'pug-loader',
         },
         {
-            test: /\.(scss|css)$/,
+            test: /\.(sa|sc|c)ss$/,
             use: [
                 MiniCssExtractPlugin.loader, 
                 'css-loader', 
