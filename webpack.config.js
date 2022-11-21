@@ -51,8 +51,12 @@ module.exports = {
             },
         },
         {
-            test: /\.(woff2?|eot|ttf|otf)$/i,
+            test: /\.(woff2?|eot|ttf|otf|svg)$/i,
+            include: /fonts/,
             type: 'asset/resource',
+            generator: {
+                filename: 'assets/fonts/[name][hash][ext][query]',
+              },
         },
     ],
   },

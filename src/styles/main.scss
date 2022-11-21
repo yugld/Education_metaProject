@@ -1,6 +1,13 @@
 @import 'null.scss';
 @import './variable.scss';
 
+html{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 19px;
+color: #1F2041;
+}
 .colors {
   min-width: 270px;
   margin: 0;
